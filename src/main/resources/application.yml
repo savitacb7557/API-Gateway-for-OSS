@@ -7,8 +7,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id:  8085 #put your microservice id
-          uri: http://localhost:8085   #// here put your microservice port number
+        - id:  8056 #put your microservice id
+          uri: http://localhost:8056   #// here put your microservice port number
           predicates:
-            - Path= /api/payments/**, /api/webhooks/**, /debug/**      #/swag/api/v1.0/** ///add here the endpoints
-            #http://localhost:9090/swag/api/v1.0/welcome
+            - Path= /api/payments/**, /api/webhooks/**, /debug/**
